@@ -1,0 +1,6 @@
+default: --no-source --color --format pretty --format html --out results.html
+smoke_tests: --no-source --color --format pretty --format html --out results.html --tags @smoke
+regression_tests: --no-source --color --format pretty --format html --out results.html --tags @regression
+dev_regression_tests: --no-source --color --format pretty --format html --out results.html --tags @regression Environment = 'dev'
+dev_cars_regression_tests: --no-source --color --format pretty --format html --out results.html --tags @regression Environment = 'dev'
+qa_cars_regression_tests: --no-source --color --format pretty --format html --out results.html --tags @regression Environment = 'qa'
